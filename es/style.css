@@ -239,14 +239,24 @@ nav ul li a:hover::after {
 }
 
 @keyframes slide {
-
-    20%, 100% {
+    0%, 100% {
         transform: translateX(0);
     }
-    10%, 50% {
+    10%, 90% {
         transform: translateX(-100%);
     }
-
+    20%, 80% {
+        transform: translateX(-200%);
+    }
+    30%, 70% {
+        transform: translateX(-300%);
+    }
+    40%, 60% {
+        transform: translateX(-400%);
+    }
+    50% {
+        transform: translateX(-500%);
+    }
 }
 
 
@@ -539,6 +549,17 @@ body.light-mode {
 }
 
 @media screen and (min-width: 500px ){
+
+    @keyframes slide {
+
+        20%, 100% {
+            transform: translateX(0);
+        }
+        10%, 50% {
+            transform: translateX(-100%);
+        }
+    
+    }
     
     nav ul li {
         display: inline-block;
